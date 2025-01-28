@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 1em;
+    margin-left: 100px;
+    filter: contrast(3);
+}
+
+.menu > li {
+    font-size: 1em;
+    font-weight: 500;
+    
+}
+
+.menu ul li {
+      margin-right: 2rem;
+}
+
+
+.menu ul li:last-of-type {
+    margin-right: 0 ;
+}
+
+.menu a {
+    color: #2C363F;
+    font-weight: 300;
+    letter-spacing: .05em;
+    text-decoration: none;
+ }
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
