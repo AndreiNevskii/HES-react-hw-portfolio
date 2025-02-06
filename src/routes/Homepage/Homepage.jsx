@@ -4,7 +4,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import {Fragment, useState} from "react";
 import photo from '../../assets/Nevskii.jpg';
 
-import './HomePage.css';
+import './Homepage.css';
 
 export default function Homepage() {
   const [contactFormState, displayContactForm] = useState(false);
