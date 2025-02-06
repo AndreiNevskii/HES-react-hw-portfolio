@@ -1,9 +1,9 @@
 import Menu from "../Menu/Menu";
-import s from './Footer.module.css'
+import './Footer.css'
 
 export default function Footer() {
     return (
-        <footer className={s.footer}>
+        <footer className="footer">
             <Menu/>
         </footer>
     )

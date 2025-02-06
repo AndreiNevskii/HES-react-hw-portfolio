@@ -8,7 +8,7 @@
 }
 
 .menu > li {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
     
 }
@@ -33,3 +33,11 @@
     text-decoration: underline;
 }
 
+a.active {
+    color: red;  
+    font-weight: 500;
+}
+
+
+
+    

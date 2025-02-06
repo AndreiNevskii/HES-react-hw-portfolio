@@ -1,22 +1,19 @@
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import {Outlet} from 'react-router-dom';
 import propTypes, {string} from 'prop-types';
 import './Layout.css';
 
 
-export default function Layout({children, className}) {
+export default function Layout() {
     return (
         <div className="wrapper">
          <Header/>
-         <main className = {className}>
-            {children}
-         </main> 
+        <div className="container">
+         <Outlet/>
+         </div>
          <Footer/>
         </div>
     )
 }
 
-Layout.propTypes = {
-    children: propTypes.node,
-    className: string
-};

@@ -3,19 +3,19 @@
 .header {
 display: flex;
 flex-wrap: wrap;
+align-items: center;
 justify-content: space-between;
 font-family: "Roboto", Arial, sans-serif;
 width: 100%;
-padding-top: 1.5em;
 border-bottom: 1px solid #2C363F;
-padding-bottom: 1.5em;
+padding-bottom: 1em;
+padding-top: 1rem;
  
 }
 
 .logo {
     font-weight: 800;
     font-size: 1.5em;
-    padding-top: .5em;
    }
 
 .button-contact {
@@ -23,7 +23,6 @@ padding-bottom: 1.5em;
     font-size: 1.2em;
     width: 133pxpx;
     height: 42pxpx;
-    top: 24px;
     padding: 12px 30px 12px 30px;
     gap: 13.6px;
     border: 2px solid #2C363F;

@@ -1,16 +1,16 @@
-import Layout from '../../Layout/Layout';
-import Button from '../../Button/Button';
-import ContactForm from '../../ContactForm/ContactForm';
+import Layout from '../../components/Layout/Layout';
+import Button from '../../components/Button/Button';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import {Fragment, useState} from "react";
-import photo from '../../../assets/Nevskii.jpg';
+import photo from '../../assets/Nevskii.jpg';
 
-import './Main.css';
+import './HomePage.css';
 
-export default function Main() {
+export default function HomePage() {
   const [contactFormState, displayContactForm] = useState(false);
   return (
-     <Fragment>
-     <Layout className='main'>
+     <>
+     <main className='main'>
      <div className = "main-container-info"> 
         <span className="main-rectangle"></span>
           <div className="h1-container">
@@ -21,9 +21,9 @@ export default function Main() {
             соответствуют бренду и удобны для людей</p>
         <Button classNmae = {"button-form"} onClick = {() => displayContactForm(true)} label = "Связаться со мной"/>
      </div> 
-     <img className="main-photo" src={photo} />  
-     </Layout>  
+     <img className="main-photo" src={photo} /> 
+     </main> 
      {contactFormState && <ContactForm onClick={() => displayContactForm(false)}/>} 
-    </Fragment>
+   </>
   )
 }
