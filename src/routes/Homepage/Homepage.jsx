@@ -6,7 +6,7 @@ import photo from '../../assets/Nevskii.jpg';
 
 import './HomePage.css';
 
-export default function HomePage() {
+export default function Homepage() {
   const [contactFormState, displayContactForm] = useState(false);
   return (
      <>
@@ -19,7 +19,7 @@ export default function HomePage() {
           </div>  
           <p className= "main-p">Я создаю высокопроизводительные красивые веб-сайты, которые ориентированы на конверсию, 
             соответствуют бренду и удобны для людей</p>
-        <Button classNmae = {"button-form"} onClick = {() => displayContactForm(true)} label = "Связаться со мной"/>
+        <Button className = {"button-form"} onClick = {() => displayContactForm(true)} label = "Связаться со мной"/>
      </div> 
      <img className="main-photo" src={photo} /> 
      </main> 
