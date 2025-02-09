@@ -1,9 +1,9 @@
-import s from './burger.module.css'
+import './Burger.css'
 
-export default function Burger() {
+export default function Burger({onClick}) {
 
         return (
-          <div className={s.burger}>
+          <div className='burger' onClick={onClick}>
             <span></span>
          </div>
   

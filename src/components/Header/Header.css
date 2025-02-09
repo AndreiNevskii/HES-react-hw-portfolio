@@ -27,7 +27,17 @@ padding-top: 1rem;
     gap: 13.6px;
     border: 2px solid #2C363F;
     background: #F2F5EA;
-    
-  
+ 
 }
 
+.button-theme {
+    font-weight: 400;
+    font-size: 0.8em;
+    width: 60pxpx;
+    height: 20pxpx;
+    padding: 6px 15px;
+   
+    border: 2px solid #2C363F;
+    background: #F2F5EA;
+ 
+}

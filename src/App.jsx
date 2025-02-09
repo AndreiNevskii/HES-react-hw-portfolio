@@ -5,10 +5,15 @@ import Blog from './routes/Blog/Blog';
 import BlogPost from './routes/BlogPost/BlogPost'
 import Comments from './routes/Comments/Comments';
 import './App.css';
-import Layout from './components/Layout/Layout'
+import Layout from './components/Layout/Layout';
+import { useContext } from 'react';
+import { ThemeContext } from './context/context';
+import cn from 'classnames';
 
-export default function App() {
+export default function App(className) {
+  const {theme} = useContext(ThemeContext)
    return (
+    <div className = {theme}>
      <Routes>
       <Route path="/" element = {<Layout/>}>
        <Route index element = {<Homepage/>}/>
@@ -18,5 +23,6 @@ export default function App() {
        <Route path="comments" element = {<Comments/>}/>
        </Route>
       </Routes>
+     </div>
   )
 }

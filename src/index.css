@@ -69,3 +69,46 @@ button:focus-visible {
   }
 }
 
+
+.dark {
+  background-color: #4d4c52;
+  color: #eee5e5;
+
+}
+
+.dark a {
+  color: #f7efef;
+}
+
+.dark .menu a {
+  color: #e2d8d8;
+}
+
+.dark a.active {
+  color: red;  
+  font-weight: 500;
+
+}
+
+.dark  .main-rectangle {
+  background: #e2d8d8;
+}
+
+.dark  .button-form {
+  background: #e2d8d8;
+  color: #000;
+}
+
+.dark .header {
+ border-bottom-color: #e2d8d8;
+}
+
+.dark .footer {
+  border-top-color: #e2d8d8;
+ }
+
+ .dark .burger:before, 
+ .dark .burger span, 
+ .dark .burger:after {
+       background: #e2d8d8;
+ }
