@@ -17,10 +17,10 @@ export default function App(className) {
      <Routes>
       <Route path="/" element = {<Layout/>}>
        <Route index element = {<Homepage/>}/>
-       <Route path="about" element = {<About/>}/>
-       <Route path="blog" element = {<Blog/>}/>
-       <Route path="blog/:id" element = {<BlogPost/>}/>
-       <Route path="comments" element = {<Comments/>}/>
+       <Route path="/about" element = {<About/>}/>
+       <Route path="/blog" element = {<Blog/>}/>
+       <Route path="/blog/:id" element = {<BlogPost/>}/>
+       <Route path="/comments" element = {<Comments/>}/>
        </Route>
       </Routes>
      </div>
